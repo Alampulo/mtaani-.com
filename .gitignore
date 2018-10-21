@@ -1,4 +1,4 @@
-.env
+
 staticfiles/
 *.pyc
 media/
