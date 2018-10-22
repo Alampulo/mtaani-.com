@@ -29,11 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-<<<<<<< HEAD
 set -gx VIRTUAL_ENV "/home/moringa/yo/kibra/virtual"
-=======
-set -gx VIRTUAL_ENV "/home/moringa/moringatym/Hood-watch-master/virtual"
->>>>>>> c47743de6bfeee36b5cc1a723a14035e1c7334e2
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
