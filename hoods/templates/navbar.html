@@ -1,0 +1,37 @@
+<nav class="navbar navbar-dark fixed-top bg-light navbar-expand-lg">
+
+t
+  <button class="navbar-toggler" type="button" onclick="$('#sidebar').toggleClass('side',200)">
+    <svg width="16px" aria-hidden="true" data-prefix="fas" data-icon="grip-vertical" class="svg-inline--fa fa-grip-vertical fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M96 32H32C14.33 32 0 46.33 0 64v64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32V64c0-17.67-14.33-32-32-32zm0 160H32c-17.67 0-32 14.33-32 32v64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64c0-17.67-14.33-32-32-32zm0 160H32c-17.67 0-32 14.33-32 32v64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64c0-17.67-14.33-32-32-32zM288 32h-64c-17.67 0-32 14.33-32 32v64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32V64c0-17.67-14.33-32-32-32zm0 160h-64c-17.67 0-32 14.33-32 32v64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64c0-17.67-14.33-32-32-32zm0 160h-64c-17.67 0-32 14.33-32 32v64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64c0-17.67-14.33-32-32-32z"></path></svg>
+  </button>
+  <a class="navbar-brand pl-3" href="/">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_QMZj8tuo8v5VzLT7Y0KN6tVOhMDaH_DiBYXC9MQGc3uY8k-NIw" style="width: 300px; height: 80px;" alt="">
+  </a>
+  <a href="#">  <button class="btn btn-block btn-outline-success navigation" route="/myaccount/">My account</button></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-search"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <form class="form-inline ml-auto mr-auto my-lg-0" autocomplete="off">
+        <div class="mr-auto ml-auto">
+            <input class="form-control mr-sm-6" placeholder="Search" id="search">
+            
+        </div>
+    </form>
+
+    <button class="btn btn-block-danger  navigation" route="/hoods/">HOODS</button>
+    <!-- <a class="btn btn-outline-secondary d-none d-md-block" href="/accounts/logout">Log out</a> -->
+  </div>
+  <a class="btn btn-outline-danger " href="/accounts/logout">Log out</a>
+  
+</nav>
+
+</li>
+{% if request.user.profile.neighbourhood %}
+    {% with request.user.profile.neighbourhood as hood %}
+      <li class="nav-item">
+          <button class="btn btn-block btn-outline-success navigation" route="/myhood/">{{ hood.Name }} hood</button>
+      </li>
+    {% endwith %}
+{% endif %}
+</ul>
