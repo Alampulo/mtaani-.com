@@ -123,7 +123,11 @@ AUTH_PASSWORD_VALIDATORS = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
+<<<<<<< HEAD
         'NAME': 'ghetto',
+=======
+        'NAME': 'mtaani',
+>>>>>>> c47743de6bfeee36b5cc1a723a14035e1c7334e2
         'USER': 'moringa',
         'PASSWORD': 'Moringa123',
     }

@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 /* body{
 	background-color: blue ;
+=======
+body{
+	background-color: rgba(39, 54, 54, 0.88) !important;
+>>>>>>> c47743de6bfeee36b5cc1a723a14035e1c7334e2
 	margin-top: 30px;
     color: white!important;
 }
@@ -66,4 +71,8 @@ label{
     overflow-x: hidden;
     background: #161e26;
     position: absolute;
+<<<<<<< HEAD
 } */
+=======
+}
+>>>>>>> c47743de6bfeee36b5cc1a723a14035e1c7334e2

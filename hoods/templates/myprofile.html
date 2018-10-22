@@ -3,11 +3,17 @@
 {% load bootstrap4 %}
 {% load static %}
 {% block content %}
+<<<<<<< HEAD
 <div class="container" style="background-color:rgb(70, 66, 66); width: 100%; " >
 
 <div id="userdetails" style="padding-left: 160px; padding-bottom: 40px;  " class="row col-12 mb-2 py-2">
     <div class="mx-4 float-left">
         <img src="{{request.user.profile.profile_picture.url}}" width="260" height="300" class="img-rounded border userimage">
+=======
+<div id="userdetails" class="row col-12 mb-2 py-2">
+    <div class="mx-4 float-left">
+        <img src="{{request.user.profile.profile_picture.url}}" width="200" height="200" class="img-rounded border userimage">
+>>>>>>> c47743de6bfeee36b5cc1a723a14035e1c7334e2
     </div>
     <div class="float-left mx-4">
         <div style="margin-bottom: 20px;">
@@ -26,11 +32,16 @@
         <div>Hood : <span>{{ request.user.profile.neighbourhood.Name }}</span></div>
         </div>
 </div>
+<<<<<<< HEAD
 <div class="row"
  <div class="col-md-5">
 <!-- <div id="myhood">
 <h5 class="border-bottom">Hoods Created</h5> -->
 <h5>Created HOODS</h5>
+=======
+<div id="myhoods">
+<h5 class="border-bottom">Hoods Created</h5>
+>>>>>>> c47743de6bfeee36b5cc1a723a14035e1c7334e2
 {% for neighbourhood in request.user.profile.hoods.all %}
 <div class="card col-12 col-sm-6 col-lg-4 float-left p-1 group">
  <div class="bg-dark" style="height: 100%;">
@@ -49,7 +60,10 @@
  </div>
 </div>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c47743de6bfeee36b5cc1a723a14035e1c7334e2
 <div class="modal fade" id="confirm{{ neighbourhood.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content bg-dark">
@@ -68,6 +82,10 @@
 </div>
 {% endfor %}
 </div>
+<<<<<<< HEAD
 </div> 
 {% endblock %}
 </div> 
+=======
+{% endblock %}
+>>>>>>> c47743de6bfeee36b5cc1a723a14035e1c7334e2
